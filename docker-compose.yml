@@ -1,0 +1,10 @@
+version: '2'
+services:
+  filebrowser:
+    image: 658681744708.dkr.ecr.us-west-2.amazonaws.com/jr-app-filebrowser
+    volumes:
+      - ~/DATA_DIR:/data
+    environment:
+      - FB_BASEURL=/filebrowser
+    ports:
+      - 8686:80
